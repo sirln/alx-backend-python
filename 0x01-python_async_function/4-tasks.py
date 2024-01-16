@@ -30,4 +30,4 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
 
     delays.extend(results)
 
-    return (delays.sort())
+    return (delays)
