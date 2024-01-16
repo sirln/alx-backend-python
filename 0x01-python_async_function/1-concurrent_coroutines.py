@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Multiple async coroutines execution module
-"""
-
 import asyncio
 from typing import List
 
@@ -32,6 +28,6 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     results = await asyncio.gather(*tasks)
 
     # add/append the delays to list
-    delays.extend(results)
+    delays = sorted(results)
 
     return (delays)

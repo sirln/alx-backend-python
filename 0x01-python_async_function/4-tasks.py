@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-New async function module
-"""
-
 import asyncio
 from typing import List
 
@@ -28,6 +24,6 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
 
     results = await asyncio.gather(*tasks)
 
-    delays.extend(results)
+    delays= sorted(results)
 
-    return (delays)
+    return delays
