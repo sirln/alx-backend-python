@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+Multiple async coroutines execution module
+"""
+
 import asyncio
 from typing import List
 

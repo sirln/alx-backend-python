@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+New async function module
+"""
+
 import asyncio
 from typing import List
 
